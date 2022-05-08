@@ -28,7 +28,6 @@ const thoughtSchema = new Schema(
   }
 );
 
-// Create a virtual property `getTags` that gets the amount of tags associated with an thought
 thoughtSchema
   .virtual('reactionCount')
   // Getter
