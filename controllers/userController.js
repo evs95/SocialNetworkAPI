@@ -73,7 +73,6 @@ module.exports = {
   },
  
   removeFriend(req, res) {
-    console.log(`friend route - ${JSON.stringify(req.params)}`)
     User.findOneAndUpdate(
       { _id: req.params.userId },
       { $pull: { friends:  req.params.friendId } },
